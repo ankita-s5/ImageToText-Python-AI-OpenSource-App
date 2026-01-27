@@ -29,8 +29,8 @@ This project demonstrates practical use of **Computer Vision, OCR, and Python AI
 
 ## 🛠 Tech Stack
 - **Language:** Python
-- **OCR Engine:** Tesseract OCR
-- **Libraries:** pytesseract, OpenCV, Pillow, NumPy
+- **OCR Engine:** EasyOCR
+- **Libraries:** OpenCV, Pillow, NumPy
 
 ---
 
@@ -74,17 +74,6 @@ venv\Scripts\activate    # Windows
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Install Tesseract OCR
-- Windows: https://github.com/UB-Mannheim/tesseract/wiki
-- Linux:
-```bash
-sudo apt install tesseract-ocr
-```
-- Mac:
-```bash
-brew install tesseract
-```
-
 ### 5️⃣ Run the App
 ```bash
 python src/image_to_text.py
@@ -96,7 +85,7 @@ python src/image_to_text.py
 ```python
 from src.image_to_text import extract_text
 
-text = extract_text("images/sample_image.png")
+text = extract_text("images/1.png")
 print(text)
 ```
 
@@ -133,9 +122,5 @@ Fork the repo, raise issues, or submit pull requests.
 
 ---
 
-## 📄 License
-MIT License
-
----
 
 > 💡 *Turning images into actionable text using AI.*
